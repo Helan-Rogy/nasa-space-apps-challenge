@@ -1,0 +1,1425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NASA Space Apps Challenge</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Splash Page -->
+    <div id="splash-page" class="page active">
+        <div class="splash-container">
+            <img src="image 1.png" alt="NASA Logo" class="nasa-logo" onerror="this.src='image 1.png'">
+            <h1 class="main-title">FROM SPACE TO STORY</h1>
+            <p class="subtitle"> <b>Visualizing Earth with NASA’s Terra Data</b></p>
+            <button onclick="navigateToPage('navigation-page')">EXPLORE</button>
+        </div>
+    </div>
+
+    <!-- Navigation Hub -->
+    <div id="navigation-page" class="page">
+        <h2>MISSION CONTROL</h2>
+        <button class="back-btn" onclick="navigateToPage('splash-page')">← Back</button>
+        
+        <div class="nav-grid">
+            <div class="nav-card" onclick="navigateToPage('flood-page')">
+                <h3>FLOOD</h3>
+                <p>Flood monitoring & prediction systems</p>
+            </div>
+            <div class="nav-card" onclick="navigateToPage('glaciers-page')">
+                <h3>GLACIERS</h3>
+                <p>Glacier tracking & climate change analysis</p>
+            </div>
+            <div class="nav-card" onclick="navigateToPage('forest-fire-page')">
+                <h3>FOREST FIRE</h3>
+                <p>Wildfire monitoring & environmental impact analysis</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- FLOOD Main Page -->
+    <div id="flood-page" class="page">
+        <h2>FLOOD MONITORING</h2>
+        <button class="back-btn" onclick="navigateToPage('navigation-page')">← Back</button>
+
+        <div class="content-section">
+            <h3>FLOOD-MONITORING ANALYSIS </h3>
+            <p><b>Discover how NASA’s data turns floods into insight</b></p>
+            <p><i>Explore the 2022 Pakistan Flood and beyond</i></p>
+        </div>
+
+        <div class="action-buttons">
+            <button class="action-btn" onclick="navigateToPage('flood-details')">
+                <strong>DETAILS</strong><br>
+                <small>Comprehensive Flood Analysis</small>
+            </button>
+            <button class="action-btn" onclick="navigateToPage('infographic-space')">
+                <strong>INFOGRAPHIC SPACE</strong><br>
+                <small>Interactive Charts & Statistics</small>
+            </button>
+            <button class="action-btn" onclick="navigateToPage('timeline-selection')">
+                <strong>TIME PERIOD</strong><br>
+                <small>Choose Timeline for Analysis</small>
+            </button>
+        </div>
+    </div>
+
+    <!-- FLOOD DETAILS -->
+    <div id="flood-details" class="page">
+        <h2>2022 Pakistan Flood - Detailed Analysis</h2>
+        <button class="back-btn" onclick="navigateToPage('flood-page')">← Back to Flood</button>
+
+        <div class="content-section">
+            <h3>2022 Pakistan Flood</h3>
+            <p><b>Satellite View (NASA Worldview)</b><br>
+              Using Terra/MODIS satellite data from June to October 2022, it was clearly visible that floodwaters spread widely around Larkana, Sindh and nearby areas.<br>
+              From 2017–2019, there were almost no large floods. But from June 2022, flood levels started to rise quickly, reaching their highest point in August 2022 and slowly went down afterward.<br>
+              The red-colored areas in the map show flood-affected regions.
+            </p>
+
+            <h3>Causes of the 2022 Flood</h3>
+            <p><b>Unusually Heavy Monsoon Rain</b> – Pakistan received record-breaking rain, with Sindh and Balochistan getting 784% and 500% more rain than normal.</p>
+            <ul>
+              <li><b>Melting Glaciers</b> <i>– Due to strong heatwaves in May and June 2022, glaciers in the north melted faster, adding more water to rivers.</i></li>
+              <li><b>Climate Change</b> <i>– Warmer oceans (especially the Indian Ocean) increased monsoon rainfall. The rise in global temperature made heatwaves and floods stronger.</i></li>
+              <li><b>Poor Water Management</b> <i>– Weak drainage systems, deforestation and blocked waterways made it hard for floodwater to escape.</i></li>
+              <li><b>Deforestation</b> <i>– Loss of trees reduced the land's ability to absorb water, worsening the flooding.</i></li>
+            </ul>
+
+            <h3>Major Impacts</h3>
+            <ul>
+              <li><b>Lives Lost</b> <i>– Around 1,739 people, including 647 children, died.</i></li>
+              <li><b>Injuries</b> <i>– Nearly 12,867 people were injured.</i></li>
+              <li><b>People Affected</b> <i>– Over 33 million people were impacted across Pakistan.</i></li>
+              <li><b>Homes Destroyed</b> <i>– About 900,000 houses were destroyed and 1.3 million more were damaged.</i></li>
+              <li><b>Livestock</b> <i>– Over 1.1 million animals died.</i></li>
+              <li><b>Infrastructure</b> <i>– 13,000 km of roads and 439 bridges were damaged, cutting off many regions.</i></li>
+              <li><b>Schools</b> <i>– More than 22,000 schools were affected.</i></li>
+              <li><b>Economic Damage</b> <i>– Total loss was between US$14.9 billion to US$40 billion, making it one of the costliest floods in history.</i></li>
+              <li><b>Agriculture</b> <i>– Millions of acres of crops were washed away, creating severe food shortages.</i></li>
+              <li><b>Health Crisis</b> <i>– Lack of clean water led to outbreaks of cholera, diarrhea, malaria, and skin infections.</i></li>
+            </ul>
+
+            <h3>Climate Connection</h3>
+            <p>Pakistan contributes less than 1% to global greenhouse gas emissions but is one of the most climate-vulnerable countries.</p>
+            <p>Scientists say climate change made the 2022 floods up to 50% worse and increased the chance of similar events in the future.</p>
+
+            <h3>Pre-COVID Flood Analysis (2017–2019)</h3>
+            <ul>
+              <li><b>Baseline Conditions</b> <i>– Floods in Pakistan during this period were moderate but frequent, driven mainly by seasonal monsoons and glacier melt.</i></li>
+              <li><b>Satellite Insights</b> <i>– NASA and SUPARCO satellite data showed increasing rainfall intensity in Sindh and Punjab, foreshadowing later disasters.</i></li>
+              <li><b>Preparedness Gaps</b> <i>– Limited drainage networks and poor rural infrastructure meant even moderate floods caused large disruptions.</i></li>
+              <li><b>Warning Signs</b> <i>– Studies from 2018 and 2019 already warned that climate change was making Pakistan more flood-prone.</i></li>
+            </ul>
+
+            <h3>COVID Impact Period Flood Analysis (2020–2022)</h3>
+            <ul>
+              <li><b>Monitoring Challenges</b> <i>– Lockdowns disrupted ground surveys, forcing Pakistan to rely heavily on satellite data for tracking flood risk.</i></li>
+              <li><b>Weakened Response</b> <i>– Health crises and stretched resources reduced government capacity to prepare for floods.</i></li>
+              <li><b>Rising Climate Stress</b> <i>– Despite reduced human activity, rainfall extremes continued, showing that climate change was the main driver.</i></li>
+              <li><b>Link to 2022 Floods</b> <i>– By mid-2022, when record monsoon rains hit, response systems were already weakened, worsening the scale of the disaster.</i></li>
+            </ul>
+
+            <h3>Recent Recovery Period Flood Analysis (2022–2023)</h3>
+            <ul>
+              <li><b>Learning from 2022</b> <i>– The catastrophic floods exposed Pakistan's vulnerabilities in housing, infrastructure, and water management.</i></li>
+              <li><b>System Adaptation</b> <i>– Governments and NGOs began using AI tools, remote sensing, and cross-border climate cooperation to improve forecasts.</i></li>
+              <li><b>Rebuilding Efforts</b> <i>– Over 13,000 km of roads, 439 bridges, and millions of homes were prioritized for repair and reconstruction.</i></li>
+              <li><b>Future Preparedness</b> <i>– Recovery strategies now emphasize reforestation, resilient housing, sustainable farming, and climate adaptation funding.</i></li>
+            </ul>
+
+            <h3>Solutions for the Future</h3>
+            <ul>
+              <li><b>Better Flood Control Systems</b> <i>– Build stronger embankments, dams, and drainage networks.</i></li>
+              <li><b>Early Warning Systems</b> <i>– Use satellite and weather data to alert people early.</i></li>
+              <li><b>Tree Planting & Reforestation</b> <i>– Increase forest cover to help water soak into the soil.</i></li>
+              <li><b>Climate Adaptation Plans</b> <i>– Improve planning for extreme weather and water management.</i></li>
+              <li><b>Public Awareness</b> <i>– Educate communities about flood risks and safety actions.</i></li>
+              <li><b>Global Support</b> <i>– Encourage international climate funding and cooperation for rebuilding.</i></li>
+            </ul>
+
+            <h3>Summary</h3>
+            <ul>
+              <li><b>Historic Disaster</b> <i>– From June to October 2022, Pakistan faced one of its worst natural disasters in history.</i></li>
+              <li><b>Main Causes</b> <i>– The floods were triggered by record monsoon rains, melting glaciers, and climate change.</i></li>
+              <li><b>Widespread Damage</b> <i>– Homes, farms, schools, and roads were destroyed, affecting millions of lives.</i></li>
+              <li><b>Future Hope</b> <i>– With the help of science, satellites, and global action, Pakistan can build a safer and more climate-resilient future.</i></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- FLOOD 2017-2019 -->
+    <div id="flood-2017-2019" class="page">
+        <h2>Flood Analysis 2017-2019</h2>
+        <button class="back-btn" onclick="navigateToPage('flood-page')">← Back to Flood</button>
+        
+        <div class="content-section">
+            <h3>Pre-COVID Baseline Analysis</h3>
+            <p>Analysis of flood patterns and satellite data during the pre-COVID period, showing baseline environmental conditions and flood frequency patterns.</p>
+            
+            <img src="nasa-worldview-2017 JUN 24-to-2019 JUL 06 (1).gif" alt="Flood 2017-2019" class="gif-display">
+            
+            <div class="content-section">
+                <h4>Key Findings</h4>
+                <ul>
+                    <li>Moderate but frequent flood events</li>
+                    <li>Seasonal monsoon patterns established</li>
+                    <li>Baseline environmental conditions documented</li>
+                    <li>Early warning signs of climate change impacts</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- FLOOD 2020-2022 -->
+    <div id="flood-2020-2022" class="page">
+        <h2>Flood Analysis 2020-2022</h2>
+        <button class="back-btn" onclick="navigateToPage('flood-page')">← Back to Flood</button>
+        
+        <div class="content-section">
+            <h3>COVID Impact Period Analysis</h3>
+            <p>Analysis of flood patterns during the COVID-19 pandemic period, examining how lockdowns and reduced human activity affected flood monitoring and response capabilities.</p>
+            
+            <img src="nasa-worldview-2020 JUN 20-to-2022 APR 20.gif" alt="Flood 2020-2022" class="gif-display">
+            
+            <div class="content-section">
+                <h4>Key Findings</h4>
+                <ul>
+                    <li>Monitoring challenges during lockdowns</li>
+                    <li>Weakened response capabilities</li>
+                    <li>Continued climate stress despite reduced activity</li>
+                    <li>Preparation for 2022 catastrophic floods</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- FLOOD 2022-2023 -->
+    <div id="flood-2022-2023" class="page">
+        <h2>Flood Analysis 2022-2023</h2>
+        <button class="back-btn" onclick="navigateToPage('flood-page')">← Back to Flood</button>
+        
+        <div class="content-section">
+            <h3>Recent Recovery Period Analysis</h3>
+            <p>Analysis of flood patterns during the post-COVID recovery period, showing how systems have adapted and what new patterns have emerged in flood monitoring and response.</p>
+            
+            <img src="nasa-worldview-2022 JUN 24-to-2023 JUL 06 (1).gif" alt="Flood 2022-2023" class="gif-display">
+            
+            <div class="content-section">
+                <h4>Key Findings</h4>
+                <ul>
+                    <li>Learning from 2022 catastrophic floods</li>
+                    <li>System adaptation and improvement</li>
+                    <li>Enhanced monitoring capabilities</li>
+                    <li>Future preparedness strategies</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- GLACIERS -->
+    <div id="glaciers-page" class="page">
+        <h2>GLACIER TRACKING</h2>
+        <button class="back-btn" onclick="navigateToPage('navigation-page')">← Back</button>
+
+        <div class="content-section">
+            <h3>Glacier Monitoring Overview</h3>
+            <p><b>Discover how NASA's data reveals glacier retreat patterns</b></p>
+            <p class="tagline"><i>Explore how ice sheets evolve over time, visualize glacier loss, climate impact, and satellite insights in motion.</i></p>
+        </div>
+
+        <div class="action-buttons">
+            <button class="action-btn" onclick="navigateToPage('glaciers-details')">
+                <strong>DETAILS</strong><br>
+                <small>Comprehensive Glacier Analysis</small>
+            </button>
+            <button class="action-btn" onclick="navigateToPage('glaciers-infographic')">
+                <strong>INFOGRAPHIC SPACE</strong><br>
+                <small>Interactive Charts & Statistics</small>
+            </button>
+            <button class="action-btn" onclick="navigateToPage('glaciers-timeline')">
+                <strong>TIME PERIOD</strong><br>
+                <small>Choose Timeline for Analysis</small>
+            </button>
+        </div>
+    </div>
+
+    <!-- GLACIERS DETAILS -->
+    <div id="glaciers-details" class="page">
+        <h2>Glacier Analysis - Detailed Study</h2>
+        <button class="back-btn" onclick="navigateToPage('glaciers-page')">← Back to Glaciers</button>
+
+        <div class="content-section">
+            <h3>Global Glacier Retreat (2000–2025)</h3>
+
+            <p><b>Satellite View (NASA Terra/MODIS & Landsat)</b><br>
+            Using satellite data from 2000 to 2025, the retreat of glaciers around the world is clearly visible.
+            In regions such as the <b>Himalayas, Greenland, and Alaska</b>, glaciers have shown dramatic shrinkage.
+            Terra's MODIS instrument and Landsat missions provide consistent long-term images, allowing scientists to track ice loss year by year.
+            When comparing early 2000s images with recent ones, large sections of ice have disappeared, exposing <b>bare rock and new glacial lakes</b>.
+            Animated satellite views highlight the shrinking ice cover, with glacier boundaries receding steadily over time.</p>
+
+            <h3>Causes of Glacier Retreat</h3>
+            <ul>
+              <li><b>Rising Temperatures</b> – Global warming has increased average temperatures, especially in polar and mountain regions, speeding up ice melt.</li>
+              <li><b>Heatwaves</b> – Unusually hot summers in regions like the Himalayas and Arctic cause faster seasonal melting.</li>
+              <li><b>Changing Snowfall Patterns</b> – Less snowfall in winter reduces the natural replenishment of glaciers.</li>
+              <li><b>Soot and Pollution</b> – Dark particles from pollution settle on ice, reducing reflectivity (albedo) and making glaciers absorb more heat.</li>
+              <li><b>Climate Change</b> – The long-term warming trend caused by greenhouse gas emissions is the primary driver of glacier retreat worldwide.</li>
+            </ul>
+
+            <h3>Global Trends (2000–2025)</h3>
+            <ul>
+              <li><b>2000–2005:</b> Initial signs of accelerated melting observed in the Himalayas and Arctic regions.</li>
+              <li><b>2009–2010:</b> Noticeable ice loss captured in satellite imagery, revealing new glacial lakes and exposed terrain.</li>
+              <li><b>2015–2020:</b> Increasing melt rates linked to record-breaking global temperatures and recurring heatwaves.</li>
+              <li><b>2024–2025:</b> Several glaciers show more than 30% reduction in area compared to 2000 baselines, confirming a sustained retreat trend.</li>
+            </ul>
+
+            <h3>Impacts of Glacier Retreat</h3>
+            <ul>
+              <li><b>Rising Sea Levels</b> – Melting glaciers contribute significantly to global sea-level rise, threatening coastal regions.</li>
+              <li><b>Water Scarcity</b> – Glacier-fed rivers provide freshwater for billions of people; reduced ice mass leads to seasonal shortages.</li>
+              <li><b>Formation of Glacial Lakes</b> – Melting ice creates unstable lakes that can burst, causing Glacial Lake Outburst Floods (GLOFs).</li>
+              <li><b>Loss of Biodiversity</b> – Species adapted to cold habitats are losing their ecosystems as ice retreats.</li>
+              <li><b>Regional Climate Effects</b> – Reduced glacier cover affects local weather, monsoon patterns, and temperature regulation.</li>
+            </ul>
+
+            <h3>Regional Highlights</h3>
+            <ul>
+              <li><b>Himalayas:</b> Rapid glacial melt is endangering water supplies across South Asia and creating new flood-prone lakes.</li>
+              <li><b>Greenland:</b> Annual ice loss has doubled since 2000, significantly contributing to global sea-level rise.</li>
+              <li><b>Alaska:</b> Warming trends have accelerated ice retreat in coastal glaciers and mountain regions.</li>
+              <li><b>Andes:</b> Shrinking glaciers threaten freshwater availability in South America.</li>
+              <li><b>European Alps:</b> Over 50% of glacier volume has disappeared since 1900, with record losses in recent years.</li>
+            </ul>
+
+            <h3>Future Outlook</h3>
+            <ul>
+              <li><b>Projected Loss:</b> Scientists predict that, even under moderate emission scenarios, up to 40% of global glacier ice could vanish by 2100.</li>
+              <li><b>Sea-Level Impact:</b> Continued melting could raise sea levels by several centimeters, increasing coastal flood risk.</li>
+              <li><b>Adaptation Measures:</b> Improved monitoring, sustainable water management, and international cooperation are crucial.</li>
+              <li><b>Scientific Collaboration:</b> Ongoing satellite missions help refine climate models and support global climate action.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- GLACIERS INFOGRAPHIC -->
+    <div id="glaciers-infographic" class="page">
+        <h2>Glacier Infographic Space</h2>
+        <button class="back-btn" onclick="navigateToPage('glaciers-page')">← Back to Glaciers</button>
+
+        <div class="content-section">
+            <h3>Glacier Data Visualization</h3>
+            <p>Interactive charts and comprehensive statistics from global glacier monitoring and climate impact analysis.</p>
+
+            <!-- Chart Container -->
+            <div class="chart-container">
+                <canvas id="glacierChart"></canvas>
+            </div>
+
+            <!-- Statistics Section -->
+            <div class="flood-stats">
+                <h3>Glacier Impact Statistics (Global Data)</h3>
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <h4>Ice Mass Lost (2000-2019)</h4>
+                        <p class="stat-number">267 Gt/year</p>
+                    </div>
+                    <div class="stat-item">
+                        <h4>Sea Level Rise</h4>
+                        <p class="stat-number">3.3 mm/year</p>
+                    </div>
+                    <div class="stat-item">
+                        <h4>Arctic Ice Loss</h4>
+                        <p class="stat-number">13%/decade</p>
+                    </div>
+                    <div class="stat-item">
+                        <h4>Greenland Ice Loss</h4>
+                        <p class="stat-number">3.8 trillion tons</p>
+                    </div>
+                    <div class="stat-item">
+                        <h4>People Affected</h4>
+                        <p class="stat-number">1.9 billion</p>
+                    </div>
+                    <div class="stat-item">
+                        <h4>Temperature Rise</h4>
+                        <p class="stat-number">+1.1°C</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Additional Charts -->
+            <div class="charts-container">
+                <canvas id="iceLossChart" width="400" height="200"></canvas>
+                <canvas id="temperatureChart" width="400" height="200"></canvas>
+                <canvas id="seaLevelChart" width="400" height="200"></canvas>
+            </div>
+        </div>
+    </div>
+
+    <!-- GLACIERS TIMELINE -->
+    <div id="glaciers-timeline" class="page">
+        <h2>Choose Timeline for Glacier Analysis</h2>
+        <button class="back-btn" onclick="navigateToPage('glaciers-page')">← Back to Glaciers</button>
+
+        <div class="content-section">
+            <h3>Select Time Period for Detailed Analysis</h3>
+            <p>Choose a time period to view detailed glacier analysis and satellite data:</p>
+            
+            <div class="time-period-buttons">
+                <button class="time-period-btn" onclick="navigateToPage('glaciers-1999-2000')">
+                    <strong>1999-2000</strong><br>
+                    <small>Millennium Transition</small>
+                </button>
+                <button class="time-period-btn" onclick="navigateToPage('glaciers-2009-2010')">
+                    <strong>2009-2010</strong><br>
+                    <small>Early Climate Signals</small>
+                </button>
+                <button class="time-period-btn" onclick="navigateToPage('glaciers-2024-2025')">
+                    <strong>2024-2025</strong><br>
+                    <small>Current Analysis</small>
+                </button>
+            </div>
+
+            <div class="timeline-description">
+                <h4>What You'll Find in Each Period:</h4>
+                <ul>
+                    <li><b>1999-2000:</b> Pre-millennium baseline conditions, early satellite monitoring, and initial climate change signals</li>
+                    <li><b>2009-2010:</b> Early 21st century warming patterns, initial ice loss acceleration, and climate feedback emergence</li>
+                    <li><b>2024-2025:</b> Current extreme climate events, record-breaking ice loss, and latest satellite observations</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- GLACIERS 1999-2000 -->
+    <div id="glaciers-1999-2000" class="page">
+        <h2>Glacier Analysis 1999-2000</h2>
+        <button class="back-btn" onclick="navigateToPage('glaciers-timeline')">← Back to Timeline</button>
+        
+        <div class="content-section">
+            <h3>Millennium Transition Period Analysis</h3>
+            <p>Analysis of glacier conditions during the millennium transition period, showing baseline environmental conditions and early climate change signals using initial satellite monitoring systems.</p>
+            
+            <div class="gif-section">
+                <div class="gif-placeholder large">
+                    <h4>1999-2000 Glacier Patterns - Satellite View</h4>
+                    <div class="gif-container">
+                        <img src="nasa 19992000.gif" Glacier monitoring satellite view 1999-2000" class="gif-display">
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-section">
+                <h4>Key Findings</h4>
+                <ul>
+                    <li>Baseline glacier conditions established</li>
+                    <li>Early satellite monitoring systems deployed</li>
+                    <li>Initial climate change signals detected</li>
+                    <li>Pre-millennium environmental baseline documented</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- GLACIERS 2009-2010 -->
+    <div id="glaciers-2009-2010" class="page">
+        <h2>Glacier Analysis 2009-2010</h2>
+        <button class="back-btn" onclick="navigateToPage('glaciers-timeline')">← Back to Timeline</button>
+        
+        <div class="content-section">
+            <h3>Early Climate Signals Period Analysis</h3>
+            <p>Analysis of glacier patterns during the early 21st century period, examining initial warming patterns and the emergence of climate feedback effects on ice sheet stability.</p>
+            
+            <div class="gif-section">
+                <div class="gif-placeholder large">
+                    <h4>2009-2010 Glacier Patterns - Satellite View</h4>
+                    <div class="gif-container">
+                        <img src="nasa 200910.gif" alt="Glacier monitoring satellite view 2009-2010" class="gif-display">
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-section">
+                <h4>Key Findings</h4>
+                <ul>
+                    <li>Early 21st century warming patterns established</li>
+                    <li>Initial ice loss acceleration observed</li>
+                    <li>Climate feedback effects emerging</li>
+                    <li>Enhanced monitoring capabilities deployed</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- GLACIERS 2024-2025 -->
+    <div id="glaciers-2024-2025" class="page">
+        <h2>Glacier Analysis 2024-2025</h2>
+        <button class="back-btn" onclick="navigateToPage('glaciers-timeline')">← Back to Timeline</button>
+        
+        <div class="content-section">
+            <h3>Current Analysis Period</h3>
+            <p>Analysis of glacier patterns during the current period, showing extreme climate events, record-breaking ice loss, and the latest satellite observations of ice sheet changes.</p>
+            
+            <div class="gif-section">
+                <div class="gif-placeholder large">
+                    <h4>2024-2025 Glacier Patterns - Satellite View</h4>
+                    <div class="gif-container">
+                        <img src="nasa-worldview-2024 SEP 01-to-2025 SEP 01.gif" alt="Glacier monitoring satellite view 2024-2025" class="gif-display">
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-section">
+                <h4>Key Findings</h4>
+                <ul>
+                    <li>Current extreme climate events documented</li>
+                    <li>Record-breaking ice loss observed</li>
+                    <li>Latest satellite observations analyzed</li>
+                    <li>Future climate projections updated</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- INFOGRAPHIC SPACE -->
+    <div id="infographic-space" class="page">
+        <h2>Infographic Space</h2>
+        <button class="back-btn" onclick="navigateToPage('flood-page')">← Back to Flood</button>
+
+        <div class="content-section">
+            <h3>Flood Data Visualization</h3>
+            <p>Interactive charts and comprehensive statistics from the 2022 Pakistan Flood analysis.</p>
+
+            <!-- Chart Container -->
+            <div class="chart-container">
+                <canvas id="floodChart"></canvas>
+            </div>
+
+            <!-- Statistics Section -->
+            <div class="flood-stats">
+                <h3>Flood Impact Statistics (2022 Pakistan Floods)</h3>
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <h4>Population Affected</h4>
+                        <p class="stat-number">33 million+</p>
+                    </div>
+                    <div class="stat-item">
+                        <h4>Houses Damaged</h4>
+                        <p class="stat-number">2.1 million+</p>
+                    </div>
+                    <div class="stat-item">
+                        <h4>Deaths</h4>
+                        <p class="stat-number">1,739</p>
+                    </div>
+                    <div class="stat-item">
+                        <h4>Livestock Lost</h4>
+                        <p class="stat-number">1.16 million+</p>
+                    </div>
+                    <div class="stat-item">
+                        <h4>Economic Loss</h4>
+                        <p class="stat-number">$30 billion+</p>
+                    </div>
+                    <div class="stat-item">
+                        <h4>Schools Affected</h4>
+                        <p class="stat-number">22,000+</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Additional Charts -->
+            <div class="charts-container">
+                <canvas id="rainfallChart" width="400" height="200"></canvas>
+                <canvas id="timelineChart" width="400" height="200"></canvas>
+                <canvas id="peopleChart" width="400" height="200"></canvas>
+            </div>
+        </div>
+    </div>
+
+    <!-- TIMELINE SELECTION -->
+    <div id="timeline-selection" class="page">
+        <h2>Choose Timeline for Analysis</h2>
+        <button class="back-btn" onclick="navigateToPage('flood-page')">← Back to Flood</button>
+
+        <div class="content-section">
+            <h3>Select Time Period for Detailed Analysis</h3>
+            <p>Choose a time period to view detailed flood analysis and satellite data:</p>
+            
+            <div class="time-period-buttons">
+                <button class="time-period-btn" onclick="navigateToPage('flood-2017-2019')">
+                    <strong>2017-2019</strong><br>
+                    <small>Pre-COVID Analysis</small>
+                </button>
+                <button class="time-period-btn" onclick="navigateToPage('flood-2020-2022')">
+                    <strong>2020-2022</strong><br>
+                    <small>COVID Impact Period</small>
+                </button>
+                <button class="time-period-btn" onclick="navigateToPage('flood-2022-2023')">
+                    <strong>2022-2023</strong><br>
+                    <small>Recent Recovery</small>
+                </button>
+            </div>
+
+            <div class="timeline-description">
+                <h4>What You'll Find in Each Period:</h4>
+                <ul>
+                    <li><b>2017-2019:</b> Baseline flood patterns, pre-COVID environmental conditions, and early warning signs</li>
+                    <li><b>2020-2022:</b> COVID impact on monitoring, weakened response systems, and preparation for 2022 disaster</li>
+                    <li><b>2022-2023:</b> Learning from catastrophic floods, system adaptation, and future preparedness strategies</li>
+                </ul>
+            </div>
+        </div>
+        </div>
+
+    <!-- FOREST FIRE -->
+    <div id="forest-fire-page" class="page">
+        <h2>FOREST FIRE MONITORING</h2>
+        <button class="back-btn" onclick="navigateToPage('navigation-page')">← Back</button>
+        <div class="content-section">
+            <h3>Wildfire Detection & Environmental Impact</h3>
+            <p><b>Discover how NASA's satellite data tracks wildfires and their environmental consequences</b></p>
+            <p><i>Monitor fire activity, analyze burn patterns, and understand the ecological impact of forest fires from space.</i></p>
+        </div>
+
+        <div class="action-buttons">
+            <button class="action-btn" onclick="navigateToPage('forest-fire-details')">
+                <strong>DETAILS</strong><br>
+                <small>Comprehensive Fire Analysis</small>
+            </button>
+            <button class="action-btn" onclick="navigateToPage('forest-fire-infographic')">
+                <strong>INFOGRAPHIC SPACE</strong><br>
+                <small>Interactive Charts & Statistics</small>
+            </button>
+            <button class="action-btn" onclick="navigateToPage('forest-fire-timeline')">
+                <strong>TIME PERIOD</strong><br>
+                <small>Choose Timeline for Analysis</small>
+            </button>
+        </div>
+    </div>
+
+    <!-- FOREST FIRE DETAILS -->
+    <div id="forest-fire-details" class="page">
+        <h2>2019-2020 Australia Bushfires - Detailed Analysis</h2>
+        <button class="back-btn" onclick="navigateToPage('forest-fire-page')">← Back to Forest Fire</button>
+
+        <div class="content-section">
+            <h3>2019-2020 Australia Bushfires</h3>
+            <p><b>Satellite View (NASA Terra/MODIS & Landsat)</b><br>
+              In late 2019, Australia faced one of its darkest summers.
+              Record-breaking heat, months of drought, and fierce winds turned the land into a tinderbox.
+            </p>
+
+            <h3>Scale of the Disaster</h3>
+            <p>By early 2020, more than 11,000 fires had scorched forests, towns, and wildlife habitats across southeastern Australia.
+              Over 24 million hectares — an area nearly the size of the United Kingdom — burned in a blaze so vast it was visible from space.
+            </p>
+
+            <h3>Environmental Impact</h3>
+            <ul>
+              <li><b>Atmospheric Effects</b> <i>– The skies turned orange. Smoke drifted across the Pacific, dimming the sun as far away as South America.</i></li>
+              <li><b>Air Quality Crisis</b> <i>– Air quality in cities like Canberra and Sydney reached record hazardous levels.</i></li>
+              <li><b>Carbon Emissions</b> <i>– More than 700 million tonnes of CO₂ were released, making it one of the world's worst climate disasters in decades.</i></li>
+              <li><b>Wildlife Devastation</b> <i>– Billions of animals were displaced, with many species facing extinction risk.</i></li>
+            </ul>
+
+            <h3>Human and Economic Toll</h3>
+            <ul>
+              <li><b>Lives Lost</b> <i>– Tragic loss of human life and emergency responders.</i></li>
+              <li><b>Property Destruction</b> <i>– Thousands of homes and buildings destroyed across multiple states.</i></li>
+              <li><b>Infrastructure Damage</b> <i>– Roads, power lines, and communication networks severely impacted.</i></li>
+              <li><b>Economic Impact</b> <i>– Billions in economic losses across tourism, agriculture, and local businesses.</i></li>
+            </ul>
+
+            <h3>Satellite Monitoring and Detection</h3>
+            <p>NASA's Terra and Aqua satellites with MODIS instruments provided critical real-time fire detection and monitoring capabilities. The Advanced Spaceborne Thermal Emission and Reflection Radiometer (ASTER) and Landsat missions captured high-resolution imagery showing the extent of burn scars and environmental damage.</p>
+
+            <h3>Climate Connection</h3>
+            <p>The 2019-2020 bushfire season was exacerbated by climate change, with record-breaking temperatures, prolonged drought conditions, and changing weather patterns creating the perfect conditions for catastrophic fires.</p>
+
+            <h3>Recovery and Resilience</h3>
+            <p>As the fires subsided, blackened earth slowly gave way to green again.
+              Communities began rebuilding, and nature started to heal — a powerful reminder of both our planet's fragility and its resilience.
+            </p>
+
+            <h3>Lessons Learned</h3>
+            <ul>
+              <li><b>Early Warning Systems</b> <i>– Improved fire detection and prediction capabilities using satellite data.</i></li>
+              <li><b>Community Preparedness</b> <i>– Enhanced evacuation plans and fire-resistant building codes.</i></li>
+              <li><b>Environmental Management</b> <i>– Better land management practices to reduce fire risk.</i></li>
+              <li><b>Climate Action</b> <i>– Urgent need for global climate action to prevent future catastrophic events.</i></li>
+            </ul>
+
+            <h3>Future Monitoring</h3>
+            <p>Continued satellite monitoring helps track recovery patterns, assess long-term environmental impacts, and improve our understanding of fire behavior to better prepare for future wildfire seasons.</p>
+        </div>
+    </div>
+
+    <!-- FOREST FIRE TIMELINE -->
+    <div id="forest-fire-timeline" class="page">
+        <h2>Choose Timeline for Forest Fire Analysis</h2>
+        <button class="back-btn" onclick="navigateToPage('forest-fire-page')">← Back to Forest Fire</button>
+
+        <div class="content-section">
+            <h3>Select Time Period for Detailed Analysis</h3>
+            <p>Choose a time period to view detailed forest fire analysis and satellite data:</p>
+            
+            <div class="time-period-buttons">
+                <button class="time-period-btn" onclick="navigateToPage('forest-fire-2016')">
+                    <strong>2016 SEP 07-2016 SEP 30</strong><br>
+                    <small>Early Fire Season Analysis</small>
+                </button>
+                <button class="time-period-btn" onclick="navigateToPage('forest-fire-2019')">
+                    <strong>2019 SEP 01-2019 SEP 30</strong><br>
+                    <small>Pre-Catastrophic Fire Period</small>
+                </button>
+                <button class="time-period-btn" onclick="navigateToPage('forest-fire-2022')">
+                    <strong>2022 SEP 07-2022 SEP 30</strong><br>
+                    <small>Post-Recovery Analysis</small>
+                </button>
+            </div>
+
+            <div class="timeline-description">
+                <h4>What You'll Find in Each Period:</h4>
+                <ul>
+                    <li><b>2016 SEP 07-2016 SEP 30:</b> Early fire season patterns, baseline environmental conditions, and initial satellite monitoring data</li>
+                    <li><b>2019 SEP 01-2019 SEP 30:</b> Pre-catastrophic fire conditions, drought patterns, and early warning signs before the 2019-2020 bushfire crisis</li>
+                    <li><b>2022 SEP 07-2022 SEP 30:</b> Post-recovery analysis, ecosystem regeneration patterns, and long-term environmental impact assessment</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOREST FIRE 2016 -->
+    <div id="forest-fire-2016" class="page">
+        <h2>Forest Fire Analysis 2016 SEP 07-2016 SEP 30</h2>
+        <button class="back-btn" onclick="navigateToPage('forest-fire-timeline')">← Back to Timeline</button>
+        
+        <div class="content-section">
+            <h3>Early Fire Season Analysis</h3>
+            <p>Analysis of forest fire patterns during the early 2016 fire season, showing baseline environmental conditions and initial satellite monitoring data for fire detection and prevention systems.</p>
+            
+            <div class="gif-section">
+                <div class="gif-placeholder large">
+                    <h4>2016 Fire Season Patterns - Satellite View</h4>
+                    <div class="gif-container">
+                        <img src="nasa-worldview-2016 SEP 07-to-2016 SEP 30.gif" alt="Forest Fire 2016 September Satellite View" class="gif-display">
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-section">
+                <h4>Key Findings</h4>
+                <ul>
+                    <li>Baseline fire season conditions established</li>
+                    <li>Early satellite monitoring systems deployed</li>
+                    <li>Initial fire detection patterns documented</li>
+                    <li>Environmental baseline for future comparisons</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOREST FIRE 2019 -->
+    <div id="forest-fire-2019" class="page">
+        <h2>Forest Fire Analysis 2019 SEP 01-2019 SEP 30</h2>
+        <button class="back-btn" onclick="navigateToPage('forest-fire-timeline')">← Back to Timeline</button>
+        
+        <div class="content-section">
+            <h3>Pre-Catastrophic Fire Period Analysis</h3>
+            <p>Analysis of forest fire patterns during September 2019, examining pre-catastrophic fire conditions, drought patterns, and early warning signs before the devastating 2019-2020 bushfire crisis.</p>
+            
+            <div class="gif-section">
+                <div class="gif-placeholder large">
+                    <h4>2019 Pre-Crisis Fire Patterns - Satellite View</h4>
+                    <div class="gif-container">
+                        <img src="nasa-worldview-2019 SEP 01-to-2019 SEP 30.gif" alt="Forest Fire 2019 September Satellite View" class="gif-display">
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-section">
+                <h4>Key Findings</h4>
+                <ul>
+                    <li>Severe drought conditions documented</li>
+                    <li>Elevated fire risk indicators observed</li>
+                    <li>Early warning signs of catastrophic fire potential</li>
+                    <li>Pre-crisis environmental stress patterns</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOREST FIRE 2022 -->
+    <div id="forest-fire-2022" class="page">
+        <h2>Forest Fire Analysis 2022 SEP 07-2022 SEP 30</h2>
+        <button class="back-btn" onclick="navigateToPage('forest-fire-timeline')">← Back to Timeline</button>
+        
+        <div class="content-section">
+            <h3>Post-Recovery Analysis Period</h3>
+            <p>Analysis of forest fire patterns during September 2022, showing post-recovery analysis, ecosystem regeneration patterns, and long-term environmental impact assessment following the 2019-2020 bushfire crisis.</p>
+            
+            <div class="gif-section">
+                <div class="gif-placeholder large">
+                    <h4>2022 Post-Recovery Fire Patterns - Satellite View</h4>
+                    <div class="gif-container">
+                        <img src="nasa-worldview-2022 SEP 07-to-2022 SEP 30.gif" alt="Forest Fire 2022 September Satellite View" class="gif-display">
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-section">
+                <h4>Key Findings</h4>
+                <ul>
+                    <li>Ecosystem recovery patterns documented</li>
+                    <li>Vegetation regeneration observed</li>
+                    <li>Long-term environmental impact assessment</li>
+                    <li>Post-crisis resilience indicators</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOREST FIRE INFOGRAPHIC -->
+    <div id="forest-fire-infographic" class="page">
+        <h2>Forest Fire Infographic Space</h2>
+        <button class="back-btn" onclick="navigateToPage('forest-fire-page')">← Back to Forest Fire</button>
+
+        <div class="content-section">
+            <h3>Forest Fire Data Visualization</h3>
+            <p>Interactive charts and comprehensive statistics from global forest fire monitoring and environmental impact analysis.</p>
+
+            <!-- Chart Container -->
+            <div class="chart-container">
+                <canvas id="forestFireChart"></canvas>
+            </div>
+
+            <!-- Statistics Section -->
+            <div class="flood-stats">
+                <h3>Forest Fire Impact Statistics (2019-2020 Australia Bushfires)</h3>
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <h4>Area Burned</h4>
+                        <p class="stat-number">24M hectares</p>
+                    </div>
+                    <div class="stat-item">
+                        <h4>Number of Fires</h4>
+                        <p class="stat-number">11,000+</p>
+                    </div>
+                    <div class="stat-item">
+                        <h4>CO₂ Released</h4>
+                        <p class="stat-number">700M tonnes</p>
+                    </div>
+                    <div class="stat-item">
+                        <h4>Wildlife Affected</h4>
+                        <p class="stat-number">3B+ animals</p>
+                    </div>
+                    <div class="stat-item">
+                        <h4>Homes Destroyed</h4>
+                        <p class="stat-number">3,000+</p>
+                    </div>
+                    <div class="stat-item">
+                        <h4>Economic Loss</h4>
+                        <p class="stat-number">$100B+</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Additional Charts -->
+            <div class="charts-container">
+                <canvas id="forestFireIntensityChart" width="400" height="200"></canvas>
+                <canvas id="forestFireTemperatureChart" width="400" height="200"></canvas>
+                <canvas id="forestFireAirQualityChart" width="400" height="200"></canvas>
+            </div>
+        </div>
+    </div>
+
+    <!-- Load Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
+    <!-- JS Navigation -->
+    <script src="js/script.js"></script>
+    
+    <!-- Chart Initialization -->
+    <script>
+        // Initialize charts when the page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            // Wait a bit for the page to fully load
+            setTimeout(initializeCharts, 500);
+        });
+
+        function initializeCharts() {
+            // 0. Main Flood Impact Chart
+            const floodCtx = document.getElementById('floodChart');
+            if (floodCtx) {
+                new Chart(floodCtx, {
+                    type: 'bar',
+                    data: {
+                        labels: ['2017-2019', '2020-2022', '2022-2023'],
+                        datasets: [{
+                            label: 'Population Affected (millions)',
+                            data: [5, 12, 33],
+                            backgroundColor: [
+                                'rgba(30, 144, 255, 0.8)',
+                                'rgba(255, 206, 86, 0.8)',
+                                'rgba(255, 99, 132, 0.8)'
+                            ],
+                            borderColor: [
+                                'rgba(30, 144, 255, 1)',
+                                'rgba(255, 206, 86, 1)',
+                                'rgba(255, 99, 132, 1)'
+                            ],
+                            borderWidth: 2
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        plugins: {
+                            title: { 
+                                display: true, 
+                                text: 'Flood Impact by Period',
+                                color: '#1e90ff',
+                                font: { size: 18, weight: 'bold' }
+                            },
+                            legend: {
+                                labels: { color: '#fff' }
+                            }
+                        },
+                        scales: { 
+                            y: { 
+                                beginAtZero: true,
+                                ticks: { color: '#fff' },
+                                grid: { color: 'rgba(255,255,255,0.1)' }
+                            },
+                            x: {
+                                ticks: { color: '#fff' },
+                                grid: { color: 'rgba(255,255,255,0.1)' }
+                            }
+                        }
+                    }
+                });
+            }
+
+            // 1. Rainfall Comparison (Sindh & Balochistan normal vs 2022)
+            const rainfallCtx = document.getElementById('rainfallChart');
+            if (rainfallCtx) {
+                new Chart(rainfallCtx, {
+                    type: 'bar',
+                    data: {
+                        labels: ['Sindh', 'Balochistan'],
+                        datasets: [
+                            {
+                                label: 'Normal Rainfall (mm)',
+                                data: [60, 80],
+                                backgroundColor: 'rgba(30, 144, 255, 0.6)',
+                                borderColor: 'rgba(30, 144, 255, 1)',
+                                borderWidth: 2
+                            },
+                            {
+                                label: '2022 Rainfall (mm)',
+                                data: [530, 480],
+                                backgroundColor: 'rgba(255, 99, 132, 0.6)',
+                                borderColor: 'rgba(255, 99, 132, 1)',
+                                borderWidth: 2
+                            }
+                        ]
+                    },
+                    options: {
+                        responsive: true,
+                        plugins: {
+                            title: { 
+                                display: true, 
+                                text: 'Rainfall Comparison: Normal vs 2022',
+                                color: '#1e90ff',
+                                font: { size: 16, weight: 'bold' }
+                            },
+                            legend: {
+                                labels: { color: '#fff' }
+                            }
+                        },
+                        scales: { 
+                            y: { 
+                                beginAtZero: true,
+                                ticks: { color: '#fff' },
+                                grid: { color: 'rgba(255,255,255,0.1)' }
+                            },
+                            x: {
+                                ticks: { color: '#fff' },
+                                grid: { color: 'rgba(255,255,255,0.1)' }
+                            }
+                        }
+                    }
+                });
+            }
+
+            // 2. Flood Timeline (June–Oct 2022 water levels in Sindh)
+            const timelineCtx = document.getElementById('timelineChart');
+            if (timelineCtx) {
+                new Chart(timelineCtx, {
+                    type: 'line',
+                    data: {
+                        labels: ['June', 'July', 'Aug', 'Sept', 'Oct'],
+                        datasets: [{
+                            label: 'Floodwater Level (relative index)',
+                            data: [20, 60, 100, 70, 30],
+                            borderColor: 'rgba(0, 255, 255, 1)',
+                            backgroundColor: 'rgba(0, 255, 255, 0.2)',
+                            fill: true,
+                            tension: 0.3,
+                            borderWidth: 3
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        plugins: {
+                            title: { 
+                                display: true, 
+                                text: 'Flood Timeline: June–Oct 2022',
+                                color: '#1e90ff',
+                                font: { size: 16, weight: 'bold' }
+                            },
+                            legend: {
+                                labels: { color: '#fff' }
+                            }
+                        },
+                        scales: { 
+                            y: { 
+                                beginAtZero: true,
+                                ticks: { color: '#fff' },
+                                grid: { color: 'rgba(255,255,255,0.1)' }
+                            },
+                            x: {
+                                ticks: { color: '#fff' },
+                                grid: { color: 'rgba(255,255,255,0.1)' }
+                            }
+                        }
+                    }
+                });
+            }
+
+            // 3. People Affected (distribution pie chart)
+            const peopleCtx = document.getElementById('peopleChart');
+            if (peopleCtx) {
+                new Chart(peopleCtx, {
+                    type: 'pie',
+                    data: {
+                        labels: ['Lives Lost (1,739)', 'Injured (12,867)', 'Displaced (33M+)'],
+                        datasets: [{
+                            data: [1739, 12867, 33000000],
+                            backgroundColor: [
+                                'rgba(255, 99, 132, 0.8)',
+                                'rgba(255, 206, 86, 0.8)',
+                                'rgba(30, 144, 255, 0.8)'
+                            ],
+                            borderColor: [
+                                'rgba(255, 99, 132, 1)',
+                                'rgba(255, 206, 86, 1)',
+                                'rgba(30, 144, 255, 1)'
+                            ],
+                            borderWidth: 2
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        plugins: {
+                            title: { 
+                                display: true, 
+                                text: 'People Affected by 2022 Floods',
+                                color: '#1e90ff',
+                                font: { size: 16, weight: 'bold' }
+                            },
+                            legend: {
+                                labels: { color: '#fff' }
+                            }
+                        }
+                    }
+                });
+            }
+
+            // 4. Glacier Impact Chart
+            const glacierCtx = document.getElementById('glacierChart');
+            if (glacierCtx) {
+                new Chart(glacierCtx, {
+                    type: 'bar',
+                    data: {
+                        labels: ['2000-2010', '2010-2020', '2020-2023'],
+                        datasets: [{
+                            label: 'Ice Mass Lost (Gt/year)',
+                            data: [150, 267, 320],
+                            backgroundColor: [
+                                'rgba(30, 144, 255, 0.8)',
+                                'rgba(255, 206, 86, 0.8)',
+                                'rgba(255, 99, 132, 0.8)'
+                            ],
+                            borderColor: [
+                                'rgba(30, 144, 255, 1)',
+                                'rgba(255, 206, 86, 1)',
+                                'rgba(255, 99, 132, 1)'
+                            ],
+                            borderWidth: 2
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        plugins: {
+                            title: { 
+                                display: true, 
+                                text: 'Global Glacier Ice Loss by Period',
+                                color: '#1e90ff',
+                                font: { size: 18, weight: 'bold' }
+                            },
+                            legend: {
+                                labels: { color: '#fff' }
+                            }
+                        },
+                        scales: { 
+                            y: { 
+                                beginAtZero: true,
+                                ticks: { color: '#fff' },
+                                grid: { color: 'rgba(255,255,255,0.1)' }
+                            },
+                            x: {
+                                ticks: { color: '#fff' },
+                                grid: { color: 'rgba(255,255,255,0.1)' }
+                            }
+                        }
+                    }
+                });
+            }
+
+            // 5. Ice Loss Chart
+            const iceLossCtx = document.getElementById('iceLossChart');
+            if (iceLossCtx) {
+                new Chart(iceLossCtx, {
+                    type: 'line',
+                    data: {
+                        labels: ['2000', '2005', '2010', '2015', '2020', '2023'],
+                        datasets: [{
+                            label: 'Cumulative Ice Loss (Gt)',
+                            data: [0, 750, 1500, 2500, 4000, 5200],
+                            borderColor: 'rgba(0, 255, 255, 1)',
+                            backgroundColor: 'rgba(0, 255, 255, 0.2)',
+                            fill: true,
+                            tension: 0.3,
+                            borderWidth: 3
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        plugins: {
+                            title: { 
+                                display: true, 
+                                text: 'Cumulative Glacier Ice Loss (2000-2023)',
+                                color: '#1e90ff',
+                                font: { size: 16, weight: 'bold' }
+                            },
+                            legend: {
+                                labels: { color: '#fff' }
+                            }
+                        },
+                        scales: { 
+                            y: { 
+                                beginAtZero: true,
+                                ticks: { color: '#fff' },
+                                grid: { color: 'rgba(255,255,255,0.1)' }
+                            },
+                            x: {
+                                ticks: { color: '#fff' },
+                                grid: { color: 'rgba(255,255,255,0.1)' }
+                            }
+                        }
+                    }
+                });
+            }
+
+            // 6. Temperature Chart
+            const temperatureCtx = document.getElementById('temperatureChart');
+            if (temperatureCtx) {
+                new Chart(temperatureCtx, {
+                    type: 'line',
+                    data: {
+                        labels: ['2000', '2005', '2010', '2015', '2020', '2023'],
+                        datasets: [{
+                            label: 'Global Temperature Anomaly (°C)',
+                            data: [0.2, 0.4, 0.6, 0.8, 1.0, 1.1],
+                            borderColor: 'rgba(255, 99, 132, 1)',
+                            backgroundColor: 'rgba(255, 99, 132, 0.2)',
+                            fill: true,
+                            tension: 0.3,
+                            borderWidth: 3
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        plugins: {
+                            title: { 
+                                display: true, 
+                                text: 'Global Temperature Rise (2000-2023)',
+                                color: '#1e90ff',
+                                font: { size: 16, weight: 'bold' }
+                            },
+                            legend: {
+                                labels: { color: '#fff' }
+                            }
+                        },
+                        scales: { 
+                            y: { 
+                                beginAtZero: true,
+                                ticks: { color: '#fff' },
+                                grid: { color: 'rgba(255,255,255,0.1)' }
+                            },
+                            x: {
+                                ticks: { color: '#fff' },
+                                grid: { color: 'rgba(255,255,255,0.1)' }
+                            }
+                        }
+                    }
+                });
+            }
+
+            // 7. Sea Level Chart
+            const seaLevelCtx = document.getElementById('seaLevelChart');
+            if (seaLevelCtx) {
+                new Chart(seaLevelCtx, {
+                    type: 'line',
+                    data: {
+                        labels: ['2000', '2005', '2010', '2015', '2020', '2023'],
+                        datasets: [{
+                            label: 'Sea Level Rise (mm)',
+                            data: [0, 15, 30, 50, 75, 90],
+                            borderColor: 'rgba(30, 144, 255, 1)',
+                            backgroundColor: 'rgba(30, 144, 255, 0.2)',
+                            fill: true,
+                            tension: 0.3,
+                            borderWidth: 3
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        plugins: {
+                            title: { 
+                                display: true, 
+                                text: 'Global Sea Level Rise (2000-2023)',
+                                color: '#1e90ff',
+                                font: { size: 16, weight: 'bold' }
+                            },
+                            legend: {
+                                labels: { color: '#fff' }
+                            }
+                        },
+                        scales: { 
+                            y: { 
+                                beginAtZero: true,
+                                ticks: { color: '#fff' },
+                                grid: { color: 'rgba(255,255,255,0.1)' }
+                            },
+                            x: {
+                                ticks: { color: '#fff' },
+                                grid: { color: 'rgba(255,255,255,0.1)' }
+                            }
+                        }
+                    }
+                });
+            }
+
+            // 8. Forest Fire Impact Chart
+            const forestFireCtx = document.getElementById('forestFireChart');
+            if (forestFireCtx) {
+                new Chart(forestFireCtx, {
+                    type: 'bar',
+                    data: {
+                        labels: ['2016', '2019', '2022'],
+                        datasets: [{
+                            label: 'Area Burned (Million Hectares)',
+                            data: [2, 24, 1.5],
+                            backgroundColor: [
+                                'rgba(255, 140, 0, 0.8)',
+                                'rgba(255, 69, 0, 0.8)',
+                                'rgba(255, 165, 0, 0.8)'
+                            ],
+                            borderColor: [
+                                'rgba(255, 140, 0, 1)',
+                                'rgba(255, 69, 0, 1)',
+                                'rgba(255, 165, 0, 1)'
+                            ],
+                            borderWidth: 2
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        plugins: {
+                            title: { 
+                                display: true, 
+                                text: 'Forest Fire Impact by Year',
+                                color: '#ff4500',
+                                font: { size: 18, weight: 'bold' }
+                            },
+                            legend: {
+                                labels: { color: '#fff' }
+                            }
+                        },
+                        scales: { 
+                            y: { 
+                                beginAtZero: true,
+                                ticks: { color: '#fff' },
+                                grid: { color: 'rgba(255,255,255,0.1)' }
+                            },
+                            x: {
+                                ticks: { color: '#fff' },
+                                grid: { color: 'rgba(255,255,255,0.1)' }
+                            }
+                        }
+                    }
+                });
+            }
+
+            // 9. Forest Fire Intensity Chart
+            const fireIntensityCtx = document.getElementById('forestFireIntensityChart');
+            if (fireIntensityCtx) {
+                new Chart(fireIntensityCtx, {
+                    type: 'line',
+                    data: {
+                        labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+                        datasets: [{
+                            label: 'Fire Risk Index',
+                            data: [20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75],
+                            borderColor: 'rgba(255, 69, 0, 1)',
+                            backgroundColor: 'rgba(255, 69, 0, 0.2)',
+                            fill: true,
+                            tension: 0.3,
+                            borderWidth: 3
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        plugins: {
+                            title: { 
+                                display: true, 
+                                text: 'Monthly Fire Risk Index (2019)',
+                                color: '#ff4500',
+                                font: { size: 16, weight: 'bold' }
+                            },
+                            legend: {
+                                labels: { color: '#fff' }
+                            }
+                        },
+                        scales: { 
+                            y: { 
+                                beginAtZero: true,
+                                ticks: { color: '#fff' },
+                                grid: { color: 'rgba(255,255,255,0.1)' }
+                            },
+                            x: {
+                                ticks: { color: '#fff' },
+                                grid: { color: 'rgba(255,255,255,0.1)' }
+                            }
+                        }
+                    }
+                });
+            }
+
+            // 10. Forest Fire Temperature Chart
+            const forestFireTemperatureCtx = document.getElementById('forestFireTemperatureChart');
+            if (forestFireTemperatureCtx) {
+                new Chart(forestFireTemperatureCtx, {
+                    type: 'line',
+                    data: {
+                        labels: ['2016', '2017', '2018', '2019', '2020', '2021', '2022'],
+                        datasets: [{
+                            label: 'Average Temperature (°C)',
+                            data: [22.5, 23.1, 23.8, 24.5, 25.2, 24.8, 24.2],
+                            borderColor: 'rgba(255, 140, 0, 1)',
+                            backgroundColor: 'rgba(255, 140, 0, 0.2)',
+                            fill: true,
+                            tension: 0.3,
+                            borderWidth: 3
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        plugins: {
+                            title: { 
+                                display: true, 
+                                text: 'Temperature Rise Leading to 2019-2020 Fires',
+                                color: '#ff4500',
+                                font: { size: 16, weight: 'bold' }
+                            },
+                            legend: {
+                                labels: { color: '#fff' }
+                            }
+                        },
+                        scales: { 
+                            y: { 
+                                beginAtZero: false,
+                                ticks: { color: '#fff' },
+                                grid: { color: 'rgba(255,255,255,0.1)' }
+                            },
+                            x: {
+                                ticks: { color: '#fff' },
+                                grid: { color: 'rgba(255,255,255,0.1)' }
+                            }
+                        }
+                    }
+                });
+            }
+
+            // 11. Forest Fire Air Quality Chart
+            const forestFireAirQualityCtx = document.getElementById('forestFireAirQualityChart');
+            if (forestFireAirQualityCtx) {
+                new Chart(forestFireAirQualityCtx, {
+                    type: 'bar',
+                    data: {
+                        labels: ['Sydney', 'Melbourne', 'Canberra', 'Brisbane', 'Perth'],
+                        datasets: [{
+                            label: 'Air Quality Index (AQI)',
+                            data: [450, 380, 520, 320, 280],
+                            backgroundColor: [
+                                'rgba(255, 69, 0, 0.8)',
+                                'rgba(255, 140, 0, 0.8)',
+                                'rgba(255, 69, 0, 0.8)',
+                                'rgba(255, 165, 0, 0.8)',
+                                'rgba(255, 165, 0, 0.8)'
+                            ],
+                            borderColor: [
+                                'rgba(255, 69, 0, 1)',
+                                'rgba(255, 140, 0, 1)',
+                                'rgba(255, 69, 0, 1)',
+                                'rgba(255, 165, 0, 1)',
+                                'rgba(255, 165, 0, 1)'
+                            ],
+                            borderWidth: 2
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        plugins: {
+                            title: { 
+                                display: true, 
+                                text: 'Air Quality During Peak Fire Season (Jan 2020)',
+                                color: '#ff4500',
+                                font: { size: 16, weight: 'bold' }
+                            },
+                            legend: {
+                                labels: { color: '#fff' }
+                            }
+                        },
+                        scales: { 
+                            y: { 
+                                beginAtZero: true,
+                                ticks: { color: '#fff' },
+                                grid: { color: 'rgba(255,255,255,0.1)' }
+                            },
+                            x: {
+                                ticks: { color: '#fff' },
+                                grid: { color: 'rgba(255,255,255,0.1)' }
+                            }
+                        }
+                    }
+                });
+            }
+
+        }
+    </script>
+</body>
+</html>
